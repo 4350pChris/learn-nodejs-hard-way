@@ -6,6 +6,8 @@ import {
   RollingTimeOptions,
 } from "./utils/rolling-options";
 
+export * as Logger from "./logger";
+
 export const LogConfig = {
   ..._LogConfig,
   LogLevel,

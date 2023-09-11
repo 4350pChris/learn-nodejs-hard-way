@@ -7,9 +7,7 @@ const logger = Logger.buildLogger(
   Logger.withConfig(LogConfig.buildLogConfig(LogConfig.fromFile(configFile)))
 );
 
-logger.config.level = 0;
-
-logger.init().then(() => {
+logger.init(logger.state).then(() => {
   logger.debug("Debugging");
   logger.error("My error");
 });

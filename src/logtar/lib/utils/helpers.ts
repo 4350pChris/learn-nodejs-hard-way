@@ -19,7 +19,7 @@ export const getCallerInfo = () => {
   const error: { stack: string } = { stack: "" };
   Error.captureStackTrace(error);
 
-  const callerFrame = error.stack.split("\n")[3];
+  const callerFrame = error.stack.split("\n")[4];
   console.log(callerFrame);
   const metaData = callerFrame!.split("at ").pop();
   return metaData;

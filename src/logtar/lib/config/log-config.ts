@@ -1,5 +1,5 @@
 import { type RollingConfigState, buildRollingConfig } from "./rolling-config";
-import { type Builder, applyBuilders } from "../helpers";
+import { type Builder, applyBuilders } from "../utils/helpers";
 import { type PathOrFileDescriptor, readFileSync } from "node:fs";
 import { LogLevel } from "../utils/log-level";
 
